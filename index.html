@@ -10,14 +10,18 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="header-container">
         <div id="topbar">
-          <div class="left">
+          <div class="widget-container">
             <div class="widget">
               <p class="widget-header">ΑΡΚΑΔΙΑ</p>
               <img class="widget-img" src="./images/time.svg" alt="clock" />
               <p class="widget-text">13:28</p>
             </div>
+
+            <a href="index.html" id="logo">
+              <img src="./images/logo.svg" alt="Logo" />
+            </a>
 
             <div class="widget">
               <p class="widget-header">ΚΑΤΑΙΓΙΔΑ</p>
@@ -30,7 +34,7 @@
             </div>
           </div>
 
-          <div class="right">
+          <div class="login-container">
             <div id="login">
               <img src="./images/login.svg" alt="login" />
               <p>Εγγραφή / Σύνδεση</p>
@@ -44,10 +48,6 @@
         </div>
 
         <nav id="main">
-          <a href="index.html" id="logo">
-            <img src="./images/logo.svg" alt="Logo" />
-          </a>
-
           <ul id="main-menu">
             <li class="dropdown-parent">
               <a class="main-menu-link" href="#">Η ΟΜΟΣΠΟΝΔΙΑ</a>
@@ -160,18 +160,24 @@
         </div>
 
         <div id="featured">
-          <div>
-            <img src="./images/section-title.svg" alt="section-title-icon" />
-            <h3>ΚΑΛΩΣ ΗΛΘΑΤΕ</h3>
+          <div class="featured-logo">
+            <img
+              class="featured-logo-img"
+              src="./images/section-title.svg"
+              alt="section-title-icon"
+            />
+            <h3 class="featured-logo-text">ΚΑΛΩΣ ΗΛΘΑΤΕ</h3>
           </div>
           <h2>Η αποστολή μας</h2>
           <p>
             Ο Παναρκαδικής Ομοσπονδίας Αμερικής είναι μια πανεθνική μη
-            κερδοσκοπικού αδελφό ελληνικό-αμερικανική οργάνωση τα μέλη της
-            οποίας κατεβαίνουν από την περιοχή της Αρκαδίας στην Πελοπόννησο,
-            στη νότια Ελλάδα …
+            κερδοσκοπικού αδελφό ελληνικό-αμερικανική οργάνωση<span>
+              τα μέλη της οποίας κατεβαίνουν από την περιοχή της Αρκαδίας στην
+              Πελοπόννησο, στη νότια Ελλάδα</span
+            >
+            …
           </p>
-          <a class="btn" href="">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+          <a class="btn btn-featured" href="">ΠΕΡΙΣΣΟΤΕΡΑ</a>
         </div>
       </div>
     </header>
