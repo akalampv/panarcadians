@@ -1,0 +1,127 @@
+@media (min-width: 600px) {
+  .form-heading {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+  }
+
+  hr:first-of-type {
+    display: block;
+    margin: 20px auto;
+  }
+
+  hr {
+    margin-bottom: 20px;
+  }
+
+  .form-submit {
+    width: 40%;
+  }
+}
+
+@media (min-width: 960px) {
+  .logo-img {
+    max-width: 180px;
+  }
+
+  .footer-nav {
+    align-self: stretch;
+    margin-bottom: 20px;
+  }
+
+  .social-group {
+    gap: 30px;
+  }
+
+  .footer-menu {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  footer::after {
+    top: -22px;
+    right: 100px;
+  }
+
+  .section-form {
+    padding: 60px 0 75px;
+  }
+
+  .section-title {
+    margin: 40px 0 30px;
+  }
+
+  .btn-activities {
+    margin: 30px 0 40px;
+  }
+
+  ::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(191, 10, 48, 0.5);
+    border-radius: 4px;
+  }
+
+  .section-census {
+    background: url("./images/census-bg.png") calc(50% + 15px) 10px no-repeat;
+    padding: 40px 0 60px;
+  }
+
+  .tree {
+    gap: 20px;
+  }
+
+  .tree-icon {
+    max-width: 46px;
+  }
+
+  .tree-text {
+    max-width: 255px;
+  }
+
+  .section-census h1 {
+    font-size: 48px;
+    line-height: 50px;
+    margin: 40px 0;
+  }
+
+  .census-text {
+    text-align: left;
+  }
+
+  .census-text h3 {
+    height: 60px;
+    margin-bottom: 0;
+  }
+
+  .census-right {
+    display: block;
+  }
+
+  #title {
+    margin-bottom: 5px;
+  }
+
+  #date {
+    font-size: 34px;
+    line-height: 43px;
+  }
+}
+
+@media (min-width: 1240px) {
+  footer {
+    padding: 30px 40px 20px;
+  }
+
+  .btn-activities {
+    width: 200px;
+  }
+
+  .activity h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
