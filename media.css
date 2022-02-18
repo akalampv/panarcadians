@@ -18,6 +18,11 @@
   .form-submit {
     width: 40%;
   }
+
+  header {
+    background: url("./images/bg.png") bottom center;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 960px) {
@@ -108,6 +113,95 @@
   #date {
     font-size: 34px;
     line-height: 43px;
+  }
+
+  .login-container {
+    display: flex;
+  }
+
+  #main {
+    display: block;
+  }
+
+  #logo {
+    position: absolute;
+    left: 50px;
+    top: -10px;
+    border: 10px solid #ad3128;
+    width: 200px;
+  }
+
+  .widget-container {
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  .widget-header {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 2px;
+  }
+
+  .widget-img {
+    width: 20px;
+  }
+
+  .widget-text {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  #topbar {
+    padding: 0 40px 0 245px;
+    justify-content: space-between;
+  }
+
+  #paf {
+    margin: 20px 0 30px;
+    padding-left: 245px;
+    justify-content: flex-start;
+  }
+
+  #paf img {
+    width: 262px;
+  }
+
+  header {
+    padding-bottom: 80px;
+  }
+
+  #featured {
+    width: 460px;
+    height: 460px;
+    border: 6px solid #fff;
+    padding: 40px 30px 60px;
+  }
+
+  .featured-logo-img {
+    width: 24px;
+  }
+
+  .featured-logo-text {
+    margin-top: 5px;
+  }
+
+  #featured h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  #featured p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  #featured p span {
+    display: block;
+  }
+
+  .btn-featured {
+    padding: 15px 0;
+    width: 200px;
   }
 }
 
