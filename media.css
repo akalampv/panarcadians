@@ -1,221 +1,403 @@
-@media (min-width: 600px) {
-  .form-heading {
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 2px;
-    margin-bottom: 0;
-  }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PanarcadiansHomepage</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div id="topbar">
+          <div class="widget-container">
+            <div class="widget">
+              <p class="widget-header">ΑΡΚΑΔΙΑ</p>
+              <img class="widget-img" src="./images/time.svg" alt="clock" />
+              <p class="widget-text">13:28</p>
+            </div>
 
-  hr:first-of-type {
-    display: block;
-    margin: 20px auto;
-  }
+            <a href="index.html" id="logo">
+              <img src="./images/logo.svg" alt="Logo" />
+            </a>
 
-  hr {
-    margin-bottom: 20px;
-  }
+            <div class="widget">
+              <p class="widget-header">ΚΑΤΑΙΓΙΔΑ</p>
+              <img
+                class="widget-img"
+                src="./images/weather.svg"
+                alt="weather"
+              />
+              <p class="widget-text">12°C<span>°F</span></p>
+            </div>
+          </div>
 
-  .form-submit {
-    width: 40%;
-  }
+          <div class="login-container">
+            <div id="login">
+              <img src="./images/login.svg" alt="login" />
+              <p>Εγγραφή / Σύνδεση</p>
+            </div>
 
-  header {
-    background: url("./images/bg.png") bottom center;
-    background-size: cover;
-  }
-}
+            <div id="language">
+              <img src="./images/flag.svg" alt="flag" />
+              <img src="./images/down.svg" alt="down-arrow" />
+            </div>
+          </div>
+        </div>
 
-@media (min-width: 960px) {
-  .logo-img {
-    max-width: 180px;
-  }
+        <nav id="main">
+          <ul id="main-menu">
+            <li class="dropdown-parent">
+              <a class="main-menu-link" href="#">Η ΟΜΟΣΠΟΝΔΙΑ</a>
 
-  .footer-nav {
-    align-self: stretch;
-    margin-bottom: 20px;
-  }
+              <ul class="dropdown">
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">Ιστορία</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">Διοικητικό Συμβούλιο</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#"
+                    >Πρόεδρος - Βιογραφικό Σημείωμα</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">Μήνυμα Προέδρου</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">Districts</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">Διατελεσαντες Προέδροι</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">Αποστολή - Αξίες</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">Πορεία - Εξέλιξη</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#"
+                    >Ο Έλληνας πρέσβης στην Ουάσιγκτον</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">Ο Πρέσβης ΗΠΑ στην Αθήνα</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#"
+                    >Ο Οικουμενικός Πατριάρχης</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="#">Ο Αρχιεπίσκοπος Αμερικής</a>
+                </li>
+              </ul>
+            </li>
+            <li><a class="main-menu-link" href="#">ΑΡΚΑΔΩΝ ΕΡΓΑ</a></li>
+            <li><a class="main-menu-link" href="#">ΕΠΩΝΥΜΟΙ ΑΡΚΑΔΕΣ</a></li>
+            <li><a class="main-menu-link" href="#">ΝΕΑ - ΕΝΗΜΕΡΩΣΗ</a></li>
+            <li>
+              <a class="main-menu-link" href="#">ΕΠΙΣΚΕΨΗ ΣΤΗΝ ΑΡΚΑΔΙΑ</a>
+            </li>
+            <li>
+              <a class="main-menu-link" href="#">ΑΝΑΖΗΤΗΣΕΙΣ ΣΤΗΝ ΑΡΚΑΔΙΑ</a>
+            </li>
+            <li>
+              <a class="main-menu-link" href="#">
+                <svg
+                  class="mail-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M20 3H4C2.3 3 1 4.3 1 6V18C1 19.7 2.3 21 4 21H20C21.7 21 23 19.7 23 18V6C23 4.3 21.7 3 20 3ZM4 5H20C20.4 5 20.7 5.2 20.9 5.6L12 11.8L3.1 5.6C3.3 5.2 3.6 5 4 5ZM3 18C3 18.6 3.4 19 4 19H20C20.6 19 21 18.6 21 18V7.9L12.6 13.8C12.4 13.9 12.2 14 12 14C11.8 14 11.6 13.9 11.4 13.8L3 7.9V18Z"
+                    fill="black"
+                  />
+                  <mask
+                    id="mask0_3_4997"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="1"
+                    y="3"
+                    width="22"
+                    height="18"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20 3H4C2.3 3 1 4.3 1 6V18C1 19.7 2.3 21 4 21H20C21.7 21 23 19.7 23 18V6C23 4.3 21.7 3 20 3ZM4 5H20C20.4 5 20.7 5.2 20.9 5.6L12 11.8L3.1 5.6C3.3 5.2 3.6 5 4 5ZM3 18C3 18.6 3.4 19 4 19H20C20.6 19 21 18.6 21 18V7.9L12.6 13.8C12.4 13.9 12.2 14 12 14C11.8 14 11.6 13.9 11.4 13.8L3 7.9V18Z"
+                      fill="white"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_3_4997)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 0H24V24H0V0Z"
+                      fill="#002868"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-  .social-group {
-    gap: 30px;
-  }
+        <div id="paf">
+          <img
+            src="./images/paf.svg"
+            alt="Pan-Arcadian Federation of America"
+          />
+        </div>
 
-  .footer-menu {
-    flex-direction: row;
-    gap: 0;
-  }
+        <div id="featured">
+          <div class="featured-logo">
+            <img
+              class="featured-logo-img"
+              src="./images/section-title.svg"
+              alt="section-title-icon"
+            />
+            <h3 class="featured-logo-text">ΚΑΛΩΣ ΗΛΘΑΤΕ</h3>
+          </div>
+          <h2>Η αποστολή μας</h2>
+          <p>
+            Ο Παναρκαδικής Ομοσπονδίας Αμερικής είναι μια πανεθνική μη
+            κερδοσκοπικού αδελφό ελληνικό-αμερικανική οργάνωση<span>
+              τα μέλη της οποίας κατεβαίνουν από την περιοχή της Αρκαδίας στην
+              Πελοπόννησο, στη νότια Ελλάδα</span
+            >
+            …
+          </p>
+          <a class="btn btn-featured" href="">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+        </div>
+      </div>
+    </header>
+    <section class="section-census">
+      <div class="tree">
+        <img class="tree-icon" src="./images/tree.svg" alt="tree" />
+        <img class="tree-text" src="./images/tree-text.svg" alt="logo-text" />
+      </div>
 
-  footer::after {
-    top: -22px;
-    right: 100px;
-  }
+      <h1>Μετριόμαστε, γιατί μετράμε!</h1>
 
-  .section-form {
-    padding: 60px 0 75px;
-  }
+      <div class="census-text">
+        <div class="census-left">
+          <h3>
+            Γενική απογραφή των αποδήμων Αρκάδων στις ΗΠΑ και επαναπατρισθέντων
+            από τις ΗΠΑ
+          </h3>
+          <p>
+            Η Παναρκαδική Ομοσπονδία Αμερικής πραγματοποιεί απογραφή των Αρκάδων
+            που διαμένουν και εργάζονται στις ΗΠΑ, (ανεξαρτήτως υπηκότητας).
+          </p>
+          <h4>Το αποτύπωμα της Αρκαδικής γης μας συνδέει!</h4>
+          <p>
+            Όση χιλιομετρική απόσταση και αν μας χωρίζει, όσες γενιές και να
+            έχουμε...ψηλώσει πέρα απο τις ρίζες μας, η Αρκαδία, μας ενώνει!
+          </p>
+        </div>
+        <div class="census-right">
+          <h3>Απογραφόμαστε...</h3>
+          <ul>
+            <li>
+              <img src="./images/right.svg" alt="right-arrow" />
+              <p>Για να γνωρίσουμε ο ένας τον άλλο.</p>
+            </li>
+            <li>
+              <img src="./images/right.svg" alt="right-arrow" />
+              <p>
+                Για να αντλήσουμε δύναμη απο τις ρίζες μας και την καταγωγή μας.
+              </p>
+            </li>
+            <li>
+              <img src="./images/right.svg" alt="right-arrow" />
+              <p>
+                Για να είμαστε χρήσιμοι και να παρεμβαίνουμε δημιουργικά για τις
+                ΗΠΑ την Ελλάδα και την Αρκαδία.
+              </p>
+            </li>
+            <li>
+              <img src="./images/right.svg" alt="right-arrow" />
+              <p>Για να υλοποιήσουμε τα σχέδια και τα οραματά μας.</p>
+            </li>
+            <li>
+              <img src="./images/right.svg" alt="right-arrow" />
+              <p>Για να είμαστε ισχυροί.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-  .section-title {
-    margin: 40px 0 30px;
-  }
+      <div id="census-date">
+        <p id="title">ΤΕΛΕΤΗ ΕΝΑΡΞΗΣ</p>
+        <p id="date">Παρασκευή 20 Απριλίου 2108</p>
+        <p id="place">ΝΕΑ ΥΟΡΚΗ</p>
+      </div>
+    </section>
+    <section class="section-activities">
+      <div class="section-title">
+        <img src="./images/section-title.svg" alt="section-title-icon" />
+        <h3>ΕΡΓΑ & ΔΡΑΣΤΗΡΙΟΤΗΤΕΣ</h3>
+      </div>
 
-  .btn-activities {
-    margin: 30px 0 40px;
-  }
+      <div class="activities">
+        <div class="activity">
+          <img src="./images/photo1.jpg" alt="photo1" />
+          <h2>Γενικού Παναρκαδικό Νοσοκομείο Τρίπολης</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolor.
+          </p>
+          <div class="more">
+            <img src="./images/more-icon.svg" alt="more-icon" />
+            <span>ΠΕΡΙΣΣΟΤΕΡΑ</span>
+          </div>
+        </div>
 
-  ::-webkit-scrollbar {
-    height: 5px;
-  }
+        <div class="activity">
+          <img src="./images/photo2.jpg" alt="photo2" />
+          <h2>Ο παραδοσιακός οικισμός του Λεωνιδίου</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolor.
+          </p>
+          <div class="more">
+            <img src="./images/more-icon.svg" alt="more-icon" />
+            <span>ΠΕΡΙΣΣΟΤΕΡΑ</span>
+          </div>
+        </div>
 
-  ::-webkit-scrollbar-thumb {
-    background: rgba(191, 10, 48, 0.5);
-    border-radius: 4px;
-  }
+        <div class="activity">
+          <img src="./images/photo3.jpg" alt="photo3" />
+          <h2>Κυνουρία, Εκεί που δεσπόζει ο Πάρνωνας</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolor.
+          </p>
+          <div class="more">
+            <img src="./images/more-icon.svg" alt="more-icon" />
+            <span>ΠΕΡΙΣΣΟΤΕΡΑ</span>
+          </div>
+        </div>
 
-  .section-census {
-    background: url("./images/census-bg.png") calc(50% + 15px) 10px no-repeat;
-    padding: 40px 0 60px;
-  }
+        <div class="activity">
+          <img src="./images/photo4.jpg" alt="photo4" />
+          <h2>Οι ελληνικές πόλεις με τα καλύτερα πάρκα!</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolor.
+          </p>
+          <div class="more">
+            <img src="./images/more-icon.svg" alt="more-icon" />
+            <span>ΠΕΡΙΣΣΟΤΕΡΑ</span>
+          </div>
+        </div>
+      </div>
 
-  .tree {
-    gap: 20px;
-  }
+      <a class="btn btn-activities" href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+    </section>
+    <section class="section-form">
+      <h3 class="form-heading">ΕΠΙΚΟΙΝΩΝΙΑ</h3>
 
-  .tree-icon {
-    max-width: 46px;
-  }
+      <hr />
 
-  .tree-text {
-    max-width: 255px;
-  }
+      <form action="#" class="form">
+        <div class="form-group">
+          <label for="name" class="form-label">Ονοματεπώνυμο</label>
+          <div class="form-input-group">
+            <input id="name" type="text" class="form-input" />
+          </div>
+        </div>
 
-  .section-census h1 {
-    font-size: 48px;
-    line-height: 50px;
-    margin: 40px 0;
-  }
+        <div class="form-group">
+          <label for="phone" class="form-label">Τηλέφωνο</label>
+          <div class="form-input-group">
+            <img class="form-input-icon" src="./images/phone.svg" alt="phone" />
+            <input id="phone" type="text" class="form-input" />
+          </div>
+        </div>
 
-  .census-text {
-    text-align: left;
-  }
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <div class="form-input-group">
+            <img class="form-input-icon" src="./images/email.svg" alt="email" />
+            <input id="email" type="text" class="form-input" />
+          </div>
+        </div>
 
-  .census-text h3 {
-    height: 60px;
-    margin-bottom: 0;
-  }
+        <div class="form-group">
+          <label for="message" class="form-label">Μήνυμα</label>
+          <div class="form-input-group form-message-group">
+            <textarea id="message" type="text" class="form-input"></textarea>
+          </div>
+        </div>
+      </form>
 
-  .census-right {
-    display: block;
-  }
+      <hr />
 
-  #title {
-    margin-bottom: 5px;
-  }
+      <div class="form-submit-group">
+        <a href="#" class="form-submit">
+          <p class="form-submit-text">ΑΠΟΣΤΟΛΗ</p>
+          <img
+            class="form-submit-icon"
+            src="./images/submit.svg"
+            alt="submit"
+          />
+        </a>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <a href="./index.html" class="logo-group">
+          <img src="./images/logo.svg" alt="logo" class="logo-img" />
+          <img src="./images/paf.svg" alt="logo-text" class="logo-text" />
+        </a>
 
-  #date {
-    font-size: 34px;
-    line-height: 43px;
-  }
+        <div class="social-group">
+          <img src="./images/facebook.svg" alt="facebook-icon" />
+          <img src="./images/twitter.svg" alt="twitter-icon" />
+          <img src="./images/linkedin.svg" alt="linkedin-icon" />
+          <img src="./images/instagram.svg" alt="instagram-icon" />
+          <img src="./images/youtube.svg" alt="youtube-icon" />
+        </div>
 
-  .login-container {
-    display: flex;
-  }
+        <nav class="footer-nav">
+          <ul class="footer-menu">
+            <li>
+              <a href="" class="footer-menu-link">Η ΟΜΟΣΠΟΝΔΙΑ</a>
+            </li>
+            <li>
+              <a href="" class="footer-menu-link">ΑΡΚΑΔΩΝ ΕΡΓΑ</a>
+            </li>
+            <li>
+              <a href="" class="footer-menu-link">ΕΠΩΝΥΜΟΙ ΑΡΚΑΔΕΣ</a>
+            </li>
+            <li>
+              <a href="" class="footer-menu-link">ΝΕΑ - ΕΝΗΜΕΡΩΣΗ</a>
+            </li>
+            <li>
+              <a href="" class="footer-menu-link">ΕΠΙΣΚΕΨΗ ΣΤΗΝ ΑΡΚΑΔΙΑ</a>
+            </li>
+            <li>
+              <a href="" class="footer-menu-link">ΑΝΑΖΗΤΗΣΕΙΣ ΣΤΗΝ ΑΡΚΑΔΙΑ</a>
+            </li>
+            <li>
+              <a href="" class="footer-menu-link">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+            </li>
+          </ul>
+        </nav>
 
-  #main {
-    display: block;
-  }
-
-  #logo {
-    position: absolute;
-    left: 50px;
-    top: -10px;
-    border: 10px solid #ad3128;
-    width: 200px;
-  }
-
-  .widget-container {
-    justify-content: flex-start;
-    width: auto;
-  }
-
-  .widget-header {
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 2px;
-  }
-
-  .widget-img {
-    width: 20px;
-  }
-
-  .widget-text {
-    font-size: 26px;
-    line-height: 32px;
-  }
-
-  #topbar {
-    padding: 0 40px 0 245px;
-    justify-content: space-between;
-  }
-
-  #paf {
-    margin: 20px 0 30px;
-    padding-left: 245px;
-    justify-content: flex-start;
-  }
-
-  #paf img {
-    width: 262px;
-  }
-
-  header {
-    padding-bottom: 80px;
-  }
-
-  #featured {
-    width: 460px;
-    height: 460px;
-    border: 6px solid #fff;
-    padding: 40px 30px 60px;
-  }
-
-  .featured-logo-img {
-    width: 24px;
-  }
-
-  .featured-logo-text {
-    margin-top: 5px;
-  }
-
-  #featured h2 {
-    font-size: 24px;
-    line-height: 30px;
-  }
-
-  #featured p {
-    font-size: 16px;
-    line-height: 25px;
-  }
-
-  #featured p span {
-    display: block;
-  }
-
-  .btn-featured {
-    padding: 15px 0;
-    width: 200px;
-  }
-}
-
-@media (min-width: 1240px) {
-  footer {
-    padding: 30px 40px 20px;
-  }
-
-  .btn-activities {
-    width: 200px;
-  }
-
-  .activity h2 {
-    font-size: 24px;
-    line-height: 30px;
-  }
-}
+        <p class="footer-copyright">©2018 Pan Arcadian Federation of America</p>
+      </div>
+    </footer>
+  </body>
+</html>
