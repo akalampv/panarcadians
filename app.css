@@ -149,7 +149,7 @@ header {
 
 .nav {
   width: min(93.75vw, 300px);
-  height: 100vh;
+  height: calc(100vh - .1px);
   background: #fff;
   position: fixed;
   top: 0;
@@ -159,6 +159,7 @@ header {
   visibility: hidden;
   opacity: 0;
   z-index: 3;
+  overflow-y: auto;
 }
 
 .nav-header {
