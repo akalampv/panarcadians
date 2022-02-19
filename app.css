@@ -159,6 +159,7 @@ header {
   opacity: 0;
   z-index: 3;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .nav-header {
