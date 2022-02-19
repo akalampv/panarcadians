@@ -153,6 +153,7 @@ header {
   position: fixed;
   top: 0;
   right: 0;
+  bottom: 0;
   transform: translateX(100%);
   transition: all .3s ease-out;
   visibility: hidden;
