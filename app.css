@@ -46,6 +46,7 @@ header {
   background-size: cover;
   padding: 10px 0 30px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .header-container {
