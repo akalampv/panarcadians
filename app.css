@@ -130,7 +130,7 @@ header {
   top: 0;
   right: 0;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   overflow-y: auto;
   display: none;
   z-index: 1;
