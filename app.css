@@ -159,6 +159,10 @@ header {
   visibility: hidden;
   opacity: 0;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
 }
 
 .nav-header {
@@ -194,11 +198,12 @@ header {
 
 .nav-list {
   list-style: none;
-  padding: 20px 10px 0 20px;
+  padding: 20px 10px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   gap: 20px;
+  overflow: auto;
 }
 
 .nav-item {
